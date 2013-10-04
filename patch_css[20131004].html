@@ -8,6 +8,11 @@ makeshop_common.css 741(line)
 메인상품리스트 진열 수정 
 ============================================== */
 
+#container.main .items-wrap .items[data-type=horizontal] {
+display:block;
+font-size: 0;
+}
+
 .items-wrap .items[data-type=horizontal] > li {
 display: inline-block;
 position: relative;
@@ -17,7 +22,19 @@ vertical-align: top;
 padding: 0 3px;
 }
 
+/* 상품 아이콘 */
+#container.main .items-wrap .items[data-type=horizontal] .smartskinProductIconSet img{
+display:none;
+}
 
+#container.main .items-wrap .items[data-type=horizontal] .smartskinProductIconSet img:first-child{
+display:block;
+}
+
+/* 상품 아이콘 노출 안함 */
+#container.main .items-wrap .items[data-type=horizontal] .smartskinProductIconSet {
+display:none;
+}
 
 
 
