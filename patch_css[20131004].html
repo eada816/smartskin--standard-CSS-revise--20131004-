@@ -32,3 +32,74 @@ display: block;
 padding: 6px 5px;
 font-size: 0;
 }
+
+
+
+
+
+/*============================================== 
+
+상품리스트 미디어쿼리 수정
+
+============================================== */
+/* 960 over screen size (for PC) */
+@media only screen and (min-width: 960px) {
+	.items-wrap .items[data-type=horizontal] > li {width:25%;}
+	.items-wrap .items[data-type=gallery] > li {width:25%;}
+	
+	#order-list .MK_orderlist ul{width:49.6%;}
+	
+	.smartskinListPageUIDesign li.smartskinListPageContentContainer{ width:25%; }
+}
+
+
+
+
+
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	
+}
+
+
+
+
+
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.items-wrap .items[data-type=horizontal] > li {width:25%;}
+	.items-wrap .items[data-type=gallery] > li {width:25%;}
+	
+	
+	#order-list .MK_orderlist ul{width:49.6%;}
+	
+	.smartskinListPageUIDesign li.smartskinListPageContentContainer{ width:25%; }
+}
+
+
+
+
+
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	.mobileNone{display:none !important;}
+	
+
+	.smartskinListPageUIDesign li.smartskinListPageContentContainer{ width:33.3%; }
+
+}
+
+
+
+
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	
+	
+}
